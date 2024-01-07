@@ -1,4 +1,6 @@
 # Практическое задание 11.5
+[![CI](https://github.com/amphyxs/skillfactory-ci-hw/actions/workflows/main.yml/badge.svg)](https://github.com/amphyxs/skillfactory-ci-hw/actions/workflows/main.yml)
+
 В качестве практики предлагаем вам настроить в любом из CI-инструментов пайплайн, выполняющий запрос к публичной базе данных проекта rfam (rfam.org).
 
 Что необходимо сделать:
