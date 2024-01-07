@@ -4,6 +4,7 @@ on:
   push:
     paths:
     - 'query.sql'
+  workflow_dispatch:
 
 jobs:
   run-query:
