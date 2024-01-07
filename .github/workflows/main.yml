@@ -2,13 +2,11 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  workflow_dispatch:
+    paths:
+    - 'query.sql'
 
 jobs:
-  build:
+  run-query:
     runs-on: ubuntu-latest
 
     steps:
