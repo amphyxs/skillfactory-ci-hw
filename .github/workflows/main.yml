@@ -19,10 +19,8 @@ jobs:
           mysql --user rfamro --host mysql-rfam-public.ebi.ac.uk --port 4497 --database Rfam -A < query.sql 2>result 1>result
         continue-on-error: true
       
-      - name: Commit & Push
-        uses: Andro999b/push@v1.3
+      - name: Commit & Push changes
+        uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
           force: true
-          message: 'Overwritten by Github Actions - ${date}'
