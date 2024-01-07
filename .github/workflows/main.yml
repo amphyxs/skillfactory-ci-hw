@@ -17,14 +17,7 @@ jobs:
       - name: Run query
         id: run-query 
         run: |
-          mysql --user rfamro --host mysql-rfam-public.ebi.ac.uk --port 4497 --database Rfam -A < query.sql        
-
-      - name: Write query output
-        uses: DamianReeves/write-file-action@master
-        with:
-          path: query-result
-          contents: ${{ steps.run-query.outputs.stdout }}
-          write-mode: overwrite
+          mysql --user rfamro --host mysql-rfam-public.ebi.ac.uk --port 4497 --database Rfam -A < query.sql > result
       
       - name: Commit & Push
         uses: Andro999b/push@v1.3
