@@ -1,1 +1,1 @@
-ERROR 1142 (42000) at line 1: SELECT command denied to user 'rfamro'@'52.238.29.194' for table 'fram_acc'
+ERROR 1142 (42000) at line 1: SELECT command denied to user 'rfamro'@'20.97.191.52' for table 'fram_acc'
